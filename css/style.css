@@ -179,3 +179,15 @@ button:hover {
 		width: 49%;
 	}
 }
+
+/* ================================= 
+  My Styles
+==================================== */
+i {
+	color: #FD7272;
+}
+
+i span {
+		font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+}
