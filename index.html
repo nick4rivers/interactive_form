@@ -22,11 +22,9 @@
       <fieldset>         
         <legend>Basic Info</legend>
         
-        <i id="val-name" class="fas fa-exclamation-circle"><span>  Please enter a valid name</span></i>
         <label for="name">Name:</label>
         <input type="text" id="name" name="user_name">
         
-        <i id="val-email" class="fas fa-exclamation-circle"><span>  Please enter a valid email</span></i>
         <label for="mail">Email:</label>
         <input type="email" id="mail" name="user_email">
 
@@ -88,9 +86,11 @@
         <label><input type="checkbox" name="express"> Express Workshop — Tuesday 9am-12pm, $100</label>
         <label><input type="checkbox" name="node"> Node.js Workshop — Tuesday 1pm-4pm, $100</label>          
         <label><input type="checkbox" name="build-tools"> Build tools Workshop — Wednesday 9am-12pm, $100</label>
-        <label><input type="checkbox" name="npm"> npm Workshop — Wednesday 1pm-4pm, $100</label>
-                  	
+        <label><input type="checkbox" name="npm"> npm Workshop — Wednesday 1pm-4pm, $100</label>       	
       </fieldset>
+      
+
+
       <fieldset>
         <legend>Payment Info</legend>
 
@@ -111,7 +111,7 @@
 
           <div class="col-3 col">
             <label for="zip">Zip Code:</label>
-            <input id="zip" name="user_zip" type="text"> 
+            <input id="zip" name="user_zip" type="text">
           </div>
 
           <div class="col-3 col">
@@ -144,13 +144,13 @@
           </select> 	                  	         
         </div>
 
-        <div>
+        <div id="paypal">
         	<p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click “Register” below.</p>
         </div> 
 
-        <div>
+        <div id="bitcoin">
         	<p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
-        </div>                  
+        </div>                
 
       </fieldset>        
         
