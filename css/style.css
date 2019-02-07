@@ -197,27 +197,13 @@ i span {
 	border: 2px solid #FD7272;
 }
 
-
-/* ----------------- Success Styles ----------------------- */
-#success {
-	text-align: center;
-	padding-top: 5em;
-}
-
-.register-another {
-	display: inline-block;
-	color: #fff;
-	padding: .55em 1.25em;
-	background: #22627e;
-	margin: 1.25em 0 .5em;
-	cursor: pointer;
-}
-
-.register-another:hover {
-	background: #184c62;
+.validate-text {
+	color: #FD7272;
 }
 
 .disable-checkbox {
 	color: #6C6C6CFF;
 }
+
+
 
