@@ -108,6 +108,8 @@ const hidePayment = () => {
   $('#credit-card').hide();
 };
 
+hidePayment();
+
 // set credit card as default, make sure it's showing
 $('#payment').val('credit card');
 $('#credit-card').show();
@@ -130,17 +132,16 @@ $('#payment').on('change', function() {
 
 
 // ---------------- Validation ----------------------
+// I know I should refactor some of this, but oh well!!
 
 
 // name validate
 const nameValidate = function(){
   if ($('#name').val()) {
     $('#name').removeClass('validate');
-    console.log('name is true');
     return true;
   } else {
     $('#name').addClass('validate');
-    console.log('name is false');
     return false;
   }
 };
@@ -150,11 +151,9 @@ const emailValidate = function(){
   let emailValue = $('#mail').val();
   if (/^[^@]+@[^@.]+\.[a-z]+$/i.test(emailValue)) {
     $('#mail').removeClass('validate');
-    console.log('email is true');
     return true;
   } else {
     $('#mail').addClass('validate');
-    console.log('email is false');
     return false;
   }
 };
@@ -176,15 +175,12 @@ const creditValidate = function(){
     let creditValue = $('#cc-num').val();
     if (/^[0-9]{13,17}/.test(creditValue)) {
       $('#cc-num').removeClass('validate');
-      console.log('card number is true');
       return true;
     } else {
       $('#cc-num').addClass('validate');
-      console.log('card number is false');
       return false;
     }
   } else {
-    console.log('card number no card');
     return true;
   }
 };
@@ -195,15 +191,12 @@ const zipValidate = function(){
     let zipValue = $('#zip').val();
     if (/^[0-9]{5}/.test(zipValue)) {
       $('#zip').removeClass('validate');
-      console.log('zip is true');
       return true;
     } else {
       $('#zip').addClass('validate');
-      console.log('zip is false');
       return false;
     }
   } else {
-    console.log('zip no card');
     return true;
   }
 };
@@ -214,15 +207,12 @@ const cvvValidate = function(){
     let zipValue = $('#cvv').val();
     if (/^[0-9]{3}/.test(zipValue)) {
       $('#cvv').removeClass('validate');
-      console.log('cvv is true');
       return true;
     } else {
       $('#cvv').addClass('validate');
-      console.log('cvv is false');
       return false;
     }
   } else {
-    console.log('cvv no card');
     return true;
   }
 };
